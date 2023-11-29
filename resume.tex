@@ -1,0 +1,92 @@
+% (c) 2009-2010 George R. Louthan IV <georgerlouth@nthefourth.com>
+%       http://georgerloutha.nthefourth.com
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com>
+%       http://www.gratisoft.us/todd/
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com>
+%       http://www.davidgrant.ca
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org>
+%       http://mboedick.org
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
+% Unported License. To view a copy of this license, visit
+% http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+% Creative Commons
+% 171 Second Street, Suite 300
+% San Francisco, California, 94105, USA.
+
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[pagesetup]{tucv}
+\fancyfoot[C]{Full Name - Resume - Page \thepage}
+
+
+\begin{document}
+
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Full Name} & (415) 867-5309 \\
+Address & user@example.com \\
+City, State ZIP & https://example.com \\
+\end{tabular*}
+
+
+\resheading{Objective}
+	\begin{itemize}
+		\item[] \resentrysinglecol{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.}
+	\end{itemize}
+
+
+\resheading{Education}
+	\begin{itemize}
+		\item[] \resschool[optional description]{Name}{\mbox{Location}}
+			\resdegree[optional description]{Degree}{Major}{AbbrMonth YYYY}
+	\end{itemize}
+
+
+\resheading{Employment History}
+	\begin{itemize}
+		\item[] \resemployer[optional description]{Name}{\mbox{Location}}
+
+				\resjob[
+					\begin{minipage}[t]{\linewidth}
+					\begin{itemize}
+						\item{...}
+						\item{...}
+						\item{...}
+					\end{itemize}
+					\end{minipage}
+				]{Title -- Team}{AbbrMonth YYYY}{present}
+
+				\resjob[
+					\begin{minipage}[t]{\linewidth}
+					\begin{itemize}
+						\item{...}
+						\item{...}
+						\item{...}
+					\end{itemize}
+					\end{minipage}
+				]{Title -- Team}{AbbrMonth YYYY}{AbbrMonth YYYY}
+
+		\item[] \resemployer[optional description]{Name}{\mbox{Location}}
+
+				\resjob[
+					\begin{minipage}[t]{\linewidth}
+					\begin{itemize}
+						\item{...}
+						\item{...}
+						\item{...}
+					\end{itemize}
+					\end{minipage}
+				]{Title -- Team}{AbbrMonth YYYY}{AbbrMonth YYYY}
+	\end{itemize}
+
+
+\resheading{Skills}
+	\begin{itemize}
+		\item[] \resdesc{Group 1}{...}
+		\item[] \resdesc{Group 2}{...}
+		\item[] \resdesc{Group 3}{...}
+	\end{itemize}
+
+
+\end{document}
